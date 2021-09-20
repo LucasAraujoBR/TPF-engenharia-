@@ -16,13 +16,15 @@ def contFreq(listaMedi):
 	return aux2
 
 a = contFreq(listaMedi)
-print(a)
+
+a = a - 2
+
 if '30M' == listaMedi[a]:
 		cong = True
 else:
     	cong = False
 
 if cong == True:
-	print((a-2) ,' medições de 30M')
+	print(a ,' medições de 30M')
 else: 
-	print((a-2) ,' medições de 40M')
+	print(a ,' medições de 40M')
