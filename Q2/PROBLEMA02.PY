@@ -1,16 +1,7 @@
 
-with open('medidas.txt','r') as arquivos:
-	med = arquivos.read()
-	print(med)
-listaMedi = med.split()
-print(listaMedi)
-
-# totalMedi = int(input(''))	caso fosse digitar
-# listaMedi = []
-# for _ in range (totalMedi):
-#     var = 0
-#     var = input('Mediação: ')
-#     listaMedi.append(var)
+arquivo = open('Q2/medidas.txt','r')
+med = arquivo.read()
+listaMedi = list(med.split())
 
 a = listaMedi.count('30M')
 b = listaMedi.count('40M')
